@@ -3,7 +3,7 @@
   src: local("Nexa"),
     url(../fonts/Nexa/TTF/Nexa-Trial-Regular.ttf) format("truetype");
   font-family: "Clip";
-  src: local("Clip"), url(../fonts/Clip/Clip.ttf) format("truetype");
+  src: local("Clip"), url(../fonts/Clip/TTF/Clip.ttf) format("truetype");
 
   font-display: swap;
 }
