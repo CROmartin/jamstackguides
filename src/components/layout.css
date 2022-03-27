@@ -1,9 +1,8 @@
 @font-face {
   font-family: "Nexa";
-  src: local("Nexa"),
-    url(../fonts/Nexa/static/Nexa-Trial-Regular.ttf) format("truetype");
+  src: url(../fonts/Nexa/static/Nexa-Trial-Regular.ttf) format("truetype");
   font-family: "Clip";
-  src: local("Clip"), url(../fonts/Clip/static/Clip.ttf) format("truetype");
+  src: url(../fonts/Clip/static/Clip.ttf) format("truetype");
 
   font-display: swap;
 }
