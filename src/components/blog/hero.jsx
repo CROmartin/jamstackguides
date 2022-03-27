@@ -142,9 +142,10 @@ function HeroBlog() {
       <Title></Title>
       <NeonWord fast={""} normal1="" slow="B" normal2="log" size="48px" />
       <Paragraph>
-        The how-to articles below were created to walk you through how our most
-        popular tools function. If you need help understanding how a feature
-        works, please see below for a handy step-by-step guide.
+        The how-to articles below were created to walk you through problems and
+        solutions. If you need help understanding how to create certain feature
+        or need help with solving certain problem, please see below for a handy
+        step-by-step guide.
       </Paragraph>
     </HeroS>
   )

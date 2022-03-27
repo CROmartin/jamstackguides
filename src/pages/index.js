@@ -70,26 +70,15 @@ export default function IndexPage({ data, pageContext }) {
               if (!categoryType.includes(post.data.category))
                 categoryType.push(post.data.category)
               return (
-                <>
-                  <BlogCard
-                    post={post}
-                    author={post.data.author.document.data.name}
-                    visible={
-                      i <= 8 * (page - 1) - 1 || i > 8 * page - 1
-                        ? "none"
-                        : "flex"
-                    }
-                  />
-                  <BlogCard
-                    post={post}
-                    author={post.data.author.document.data.name}
-                    visible={
-                      i <= 8 * (page - 1) - 1 || i > 8 * page - 1
-                        ? "none"
-                        : "flex"
-                    }
-                  />
-                </>
+                <BlogCard
+                  post={post}
+                  author={post.data.author.document.data.name}
+                  visible={
+                    i <= 8 * (page - 1) - 1 || i > 8 * page - 1
+                      ? "none"
+                      : "flex"
+                  }
+                />
               )
             })}
           </ArticleContainer>

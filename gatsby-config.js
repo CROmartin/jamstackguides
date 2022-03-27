@@ -4,10 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gljive`,
-    description: `Kupnja i prodaja gljiva`,
+    title: `Jamstack Guides`,
+    description: `Your every day guid for jamstack development`,
     author: `Martin Staresincic`,
-    siteUrl: `https://gljive.hr/`,
+    siteUrl: `https://jamstackguides.com/`,
     schema: `{
       "@context": "https://schema.org/",
       "@type": "WebSite",
@@ -106,7 +106,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gljiva-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/jam-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

@@ -76,11 +76,11 @@ export default function Blog({ data, location, pageContext }) {
         <HeroBlog />
         <Navbar categories={pageContext.categoryTypes} />
         <div className="resize">
-          <Breadcrumbs
+          {/* <Breadcrumbs
             currentPath={["/"].concat(
               location.pathname.split("/").filter(name => name !== "")
             )}
-          />
+          /> */}
           <ArticleContainer>
             {posts.map((post, i) => {
               blogNumber = i

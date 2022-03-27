@@ -388,7 +388,7 @@ function BlogCard({ post, author, visible }) {
         </Button>
         <ReadTime>{post.data.read_time}</ReadTime>
       </RowSpaceBtw>{" "}
-      <ArticleTitles to={`${post.data.url ? post.data.url : post.uid}`}>
+      <ArticleTitles to={`/${post.data.url ? post.data.url : post.uid}`}>
         {post.data.title}
       </ArticleTitles>
       <Desc>{post.data.description}</Desc>

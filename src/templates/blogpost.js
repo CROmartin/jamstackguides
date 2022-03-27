@@ -56,6 +56,10 @@ const Div = styled.div`
     justify-content: flex-start;
   } */
 `
+
+const Overflow = styled.div`
+  overflow: hidden;
+`
 const DivRelated = styled.div`
   text-align: left;
   margin: auto;
@@ -321,7 +325,7 @@ export default function BlogPost({ data, location, pageContext }) {
   let neonSize = "32px"
 
   return (
-    <>
+    <Overflow>
       <Blog>
         <Seo
           title={post.title}
@@ -395,7 +399,7 @@ export default function BlogPost({ data, location, pageContext }) {
           </DivRelated>
         </Related>
       </Bg>
-    </>
+    </Overflow>
   )
 }
 export const query = graphql`

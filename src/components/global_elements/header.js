@@ -129,7 +129,8 @@ const Neon = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  body {
+  div {
+    font-weight: normal;
     display: flex;
     justify-content: center;
   }
@@ -335,18 +336,18 @@ const Header = ({ siteTitle }) => (
       <H1>
         <Neon>
           {" "}
-          <body>
+          <div>
             <div class="sign">
               <span class="fast-flicker">Jam</span>Stac
               <span class="flicker">k</span>
             </div>
-          </body>
-          <body style={{ marginLeft: `20px` }}>
+          </div>
+          <div style={{ marginLeft: `20px` }}>
             <div class="sign">
               <span class="fast-flicker"> G</span>ui
               <span class="flicker">d</span> es
             </div>
-          </body>
+          </div>
         </Neon>
         <Jam></Jam>
       </H1>
