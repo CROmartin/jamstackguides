@@ -49,12 +49,19 @@ const Div = styled.div`
   @media (max-width: 375px) {
     width: 92%;
   }
-
-  /* p {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  } */
+`
+const BlogBody = styled.div`
+  text-align: left;
+  margin: auto;
+  width: 80%;
+  transition: width 1s;
+  @media (max-width: 980px) {
+    width: 90%;
+  }
+  @media (max-width: 375px) {
+    width: 92%;
+  }
+  margin-bottom: 128px;
 `
 
 const Overflow = styled.div`
@@ -344,7 +351,7 @@ export default function BlogPost({ data, location, pageContext }) {
         <Div>
           <Hero image={getImage(post.hero)} alt={"hero"} />
 
-          <Div
+          <BlogBody
             className="body"
             dangerouslySetInnerHTML={{ __html: post.body.html }}
           />

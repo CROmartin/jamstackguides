@@ -1,0 +1,42 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Url"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Job title"
+      }
+    },
+    "postion": {
+      "type": "Text",
+      "config": {
+        "label": "Postion(full time, part time, etc.)"
+      }
+    },
+    "location": {
+      "type": "Text",
+      "config": {
+        "label": "Location"
+      }
+    },
+    "date": {
+      "type": "Timestamp",
+      "config": {
+        "label": "Publish date",
+        "placeholder": "now"
+      }
+    },
+    "body": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "body"
+      }
+    }
+  }
+}

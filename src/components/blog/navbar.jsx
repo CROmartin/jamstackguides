@@ -193,6 +193,8 @@ const ArrowDown = styled.div`
   -webkit-transform: rotate(45deg);
 `
 
+///https://codepen.io/cobra_winfrey/pen/xxxwvpG
+
 function Navbar({ categories, location }) {
   const [pick, setPicked] = useState(-1)
   const [open, setOpen] = useState(false)

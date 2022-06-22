@@ -336,5 +336,23 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-minify-html",
+      options: {
+        debug: true, // debug optional, default false
+        config: {
+          // Enabled default by this plugin
+          collapseWhitespace: true,
+          minifyCSS: false,
+          minifyJS: true,
+          removeComments: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          // Disabled default by html-minifier-terser
+          sortAttributes: true,
+          useShortDoctype: true,
+        },
+      },
+    },
   ],
 }
