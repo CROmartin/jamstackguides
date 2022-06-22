@@ -124,6 +124,7 @@ const Paragraph = styled.div`
   font-family: "Nexa";
   font-weight: normal;
   text-align: center;
+  width: 90%;
   max-width: 500px;
   font-size: 22px;
   line-height: 27px;

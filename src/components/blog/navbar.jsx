@@ -13,7 +13,7 @@ const NavbarS = styled.div`
   /* border-top: 3px solid #ffb3de; */
   border-bottom: 3px solid #ffb3de;
   background: none;
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     display: none;
   }
 
@@ -114,11 +114,12 @@ const Element = styled.div`
   font-size: 20px;
   line-height: 20px;
   color: #222222;
-  margin: 0px 50px;
+  margin: 0px 20px;
   cursor: pointer;
-  padding: 20px 0px;
+  padding: 5px 0px;
   display: flex;
   flex-direction: row;
+  /* width: 100%; */
 
   text-transform: capitalize;
   a {
@@ -136,7 +137,7 @@ const Element = styled.div`
 `
 const NavbarSM = styled.div`
   width: 100%;
-  background: #f2f6ef;
+  /* background: #f2f6ef; */
 
   display: flex;
   flex-direction: column;
@@ -146,13 +147,103 @@ const NavbarSM = styled.div`
     props.open ? `1px solid #e1e1e1` : `0px solid #e1e1e1`};
   margin-bottom: 16px;
 
-  @media (min-width: 375px) {
+  animation: flickerNBM 3s linear infinite;
+
+  @keyframes flickerNBM {
+    from {
+      box-shadow: 0 0 20px #ff1493;
+    }
+
+    5% {
+      box-shadow: 0 0 18px #ff1493;
+    }
+
+    10% {
+      box-shadow: 0 0 19px #ff1493;
+    }
+
+    15% {
+      box-shadow: 0 0 22px #ff1493;
+    }
+
+    20% {
+      box-shadow: 0 0 19px #ff1493;
+    }
+
+    25% {
+      box-shadow: 0 0 18px #ff1493;
+    }
+
+    30% {
+      box-shadow: 0 0 23px #ff1493;
+    }
+
+    35% {
+      box-shadow: 0 0 18px #ff1493;
+    }
+
+    40% {
+      box-shadow: 0 0 20px #ff1493;
+    }
+
+    45% {
+      box-shadow: 0 0 19px #ff1493;
+    }
+
+    50% {
+      box-shadow: 0 0 14px #ff1493;
+    }
+
+    55% {
+      box-shadow: 0 0 17px #ff1493;
+    }
+
+    60% {
+      box-shadow: 0 0 20px #ff1493;
+    }
+
+    65% {
+      box-shadow: 0 0 24px #ff1493;
+    }
+
+    70% {
+      box-shadow: 0 0 21px #ff1493;
+    }
+
+    75% {
+      box-shadow: 0 0 19px #ff1493;
+    }
+
+    80% {
+      box-shadow: 0 0 19px #ff1493;
+    }
+
+    85% {
+      box-shadow: 0 0 14px #ff1493;
+    }
+
+    90% {
+      box-shadow: 0 0 19px #ff1493;
+    }
+
+    95% {
+      box-shadow: 0 0 20px #ff1493;
+    }
+
+    to {
+      box-shadow: 0 0 19px #ff1493;
+    }
+  }
+
+  @media (min-width: 768px) {
     display: none;
   }
 `
 const ElementM = styled.div`
   font-style: normal;
   font-weight: normal;
+  display: flex;
+  flex-direction: row;
   font-size: 20px;
   line-height: 20px;
   color: #222222;
@@ -166,6 +257,8 @@ const ElementM = styled.div`
     color: #222222;
     padding: 10px 0px;
     font-family: "Nexa";
+    display: flex;
+    flex-direction: row;
   }
 
   border-bottom: ${props =>
@@ -185,12 +278,108 @@ const HamburgerOpen = styled.div`
 `
 
 const ArrowDown = styled.div`
-  border: solid black;
-  border-width: 0 2px 2px 0;
+  border: solid rgb(255, 179, 222);
+  border-width: 0 4px 4px 0;
   display: inline-block;
-  padding: 6px;
+  padding: 8px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+
+  animation: flickerArrow 3s linear infinite;
+  box-shadow: 5px 5px 20px -1px #ff1493;
+  /* -webkit-box-shadow: inset 0 0 20px #ff1493; */
+  /* box-shadow: inset 0 0 20px #ff1493; */
+
+  @keyframes flickerArrow {
+    from {
+      box-shadow: 5px 5px 20px -1px #ff1493;
+    }
+
+    5% {
+      box-shadow: 5px 5px 18px -1px #ff1493;
+    }
+
+    10% {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+
+    15% {
+      box-shadow: 5px 5px 22px -1px #ff1493;
+    }
+
+    20% {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+
+    25% {
+      box-shadow: 5px 5px 18px -1px #ff1493;
+    }
+
+    30% {
+      box-shadow: 5px 5px 23px -1px #ff1493;
+    }
+
+    35% {
+      box-shadow: 5px 5px 18px -1px #ff1493;
+    }
+
+    40% {
+      box-shadow: 5px 5px 20px -1px #ff1493;
+    }
+
+    45% {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+
+    50% {
+      box-shadow: 5px 5px 14px -1px #ff1493;
+    }
+
+    55% {
+      box-shadow: 5px 5px 17px -1px #ff1493;
+    }
+
+    60% {
+      box-shadow: 5px 5px 20px -1px #ff1493;
+    }
+
+    65% {
+      box-shadow: 5px 5px 24px -1px #ff1493;
+    }
+
+    70% {
+      box-shadow: 5px 5px 21px -1px #ff1493;
+    }
+
+    75% {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+
+    80% {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+
+    85% {
+      box-shadow: 5px 5px 14px -1px #ff1493;
+    }
+
+    90% {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+
+    95% {
+      box-shadow: 5px 5px 20px -1px #ff1493;
+    }
+
+    to {
+      box-shadow: 5px 5px 19px -1px #ff1493;
+    }
+  }
+`
+
+const Space = styled.div`
+  width: 100%;
+  margin-bottom: 24px;
 `
 
 ///https://codepen.io/cobra_winfrey/pen/xxxwvpG
@@ -340,32 +529,99 @@ function Navbar({ categories, location }) {
         {open && (
           <>
             {pick === 0 ? (
-              <ElementM type="picked">Sve objave</ElementM>
+              <ElementM type="picked">
+                <NeonWord
+                  fast={""}
+                  normal1="All"
+                  slow=""
+                  normal2=""
+                  size="24px"
+                />
+                <div>&nbsp;</div>
+                <NeonWord
+                  fast={""}
+                  normal1=""
+                  slow=""
+                  normal2="blogs"
+                  size="24px"
+                />
+              </ElementM>
             ) : (
               <ElementM onClick={() => setPicked(0)}>
-                <Link to={`/`}>Sve objave</Link>
+                <Link to={`/`}>
+                  <NeonWord
+                    fast={""}
+                    normal1="All"
+                    slow=""
+                    normal2=""
+                    size="24px"
+                    off={true}
+                  />
+                  <div>&nbsp;</div>
+                  <NeonWord
+                    fast={""}
+                    normal1=""
+                    slow=""
+                    normal2="blogs"
+                    size="24px"
+                    off={true}
+                  />
+                </Link>
               </ElementM>
             )}
             {pick === 1 ? (
-              <ElementM type="picked">Istaknuto</ElementM>
+              <ElementM type="picked">
+                {" "}
+                <NeonWord
+                  fast={""}
+                  normal1="Featured"
+                  slow=""
+                  normal2=""
+                  size="24px"
+                />
+              </ElementM>
             ) : (
               <ElementM onClick={() => setPicked(1)}>
-                <Link to={`/istaknuto`}>Istaknuto</Link>
+                <Link to={`/featured`}>
+                  {" "}
+                  <NeonWord
+                    fast={""}
+                    normal1="Featured"
+                    slow=""
+                    normal2=""
+                    size="24px"
+                    off={true}
+                  />
+                </Link>
               </ElementM>
             )}
             {categories.map((category, i) => {
               return pick === i + 2 ? (
                 <ElementM type="picked">
-                  {filterCategoryName(category)}
+                  <NeonWord
+                    fast={""}
+                    normal1={filterCategoryName(category)}
+                    slow=""
+                    normal2=""
+                    size="24px"
+                  />
                 </ElementM>
               ) : (
                 <ElementM onClick={() => setPicked(i + 2)}>
                   <Link to={`/${category}`}>
-                    {filterCategoryName(category)}
+                    <NeonWord
+                      fast={""}
+                      normal1={filterCategoryName(category)}
+                      slow=""
+                      normal2=""
+                      size="24px"
+                      off={true}
+                    />
                   </Link>
                 </ElementM>
               )
             })}
+            <Space />
           </>
         )}
       </NavbarSM>

@@ -89,8 +89,8 @@ const Hero = styled(GatsbyImage)`
 const Bg = styled.div`
   background: linear-gradient(to right bottom, #3616ac, #e09bed);
   height: 100%;
-  width: 110vw;
-  transform: translate(-5vw, 0);
+  width: 102vw;
+  transform: translate(-2vw, 0);
   background-color: #141114;
   background-image: linear-gradient(335deg, black 23px, transparent 23px),
     linear-gradient(155deg, black 23px, transparent 23px),
@@ -222,7 +222,7 @@ const RelatedBlogPosts = styled.div`
 const Related = styled.div`
   background: none;
   border-top: 3px solid #ffb3de;
-  width: 110vw;
+  width: 103vw;
   /* transform: translate(-5vw, 0); */
 
   animation: flickerRelated 3s linear infinite;

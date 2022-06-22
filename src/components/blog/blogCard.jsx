@@ -17,6 +17,12 @@ const ArticleTitles = styled(Link)`
   padding-bottom: 5%;
   padding-top: 0;
   height: 120px;
+
+  @media (max-width: 375px) {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+  }
 `
 
 const Article = styled.article`

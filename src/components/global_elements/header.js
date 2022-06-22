@@ -11,7 +11,13 @@ const HeaderS = styled.header`
   /* margin-bottom: 1.45rem; */
   height: 324px;
   padding: 24px;
+
   padding-bottom: 48px;
+
+  @media (max-width: 410px) {
+    padding-bottom: 0;
+    padding-top: 48px;
+  }
 
   svg {
     fill: #ffffff;
@@ -153,7 +159,16 @@ const Neon = styled.div`
     top: 50%;
     font-family: "Clip";
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 60px;
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
+    @media (max-width: 600px) {
+      font-size: 40px;
+    }
+    @media (max-width: 410px) {
+      font-size: 30px;
+    }
     color: #ffe6ff;
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,

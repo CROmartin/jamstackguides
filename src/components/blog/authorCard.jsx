@@ -16,16 +16,7 @@ const Article = styled.div`
   transition: width 1s;
   box-shadow: 0 -5px 5px -5px rgba(255, 179, 222, 0.7),
     0 5px 5px -5px rgba(255, 179, 222, 0.7) inset;
-  /* background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.25)
-  ); */
+
   background-color: rgba(0, 0, 0, 0.4);
 
   @media (max-width: 980px) {
@@ -227,7 +218,7 @@ function AuthorCard({ posts, author, bio }) {
       ></Picture>
 
       <Info>
-        <Author to={`/blog/${posts.document.data.name}`}>{author}</Author>
+        <Author to={`/${posts.document.data.name}`}>{author}</Author>
 
         <AuthorTitle>{posts.document.data.title}</AuthorTitle>
 

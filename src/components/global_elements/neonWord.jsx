@@ -64,6 +64,10 @@ const Neon = styled.div`
     font-family: "Clip";
     text-transform: uppercase;
     font-size: ${props => (props.size ? props.size : `1.5em`)};
+    @media (max-width: 375px) {
+      font-size: ${props =>
+        props.size ? `${props.size.split("px")[0] * 0.75}px` : `1.1em`};
+    }
     color: #ffe6ff;
     ${props =>
       !props.off
