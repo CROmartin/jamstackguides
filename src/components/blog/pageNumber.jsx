@@ -61,7 +61,7 @@ function PageNumber(props) {
 
   return (
     <Row>
-      <div>Stranice: </div> {numbers}
+      <div>Pages: </div> {numbers}
     </Row>
   )
 }

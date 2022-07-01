@@ -1,0 +1,55 @@
+{
+  "Main": {
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "email": {
+      "type": "Text",
+      "config": {
+        "label": "Email"
+      }
+    },
+    "shortbio": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Shortbio"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "twitter": {
+      "type": "Text",
+      "config": {
+        "label": "Twitter"
+      }
+    },
+    "linkedin": {
+      "type": "Text",
+      "config": {
+        "label": "Linkedin"
+      }
+    },
+    "facebook": {
+      "type": "Text",
+      "config": {
+        "label": "Facebook"
+      }
+    }
+  }
+}
