@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getImage } from "gatsby-plugin-image"
@@ -338,6 +338,7 @@ const ImageFramer = styled.div`
   /* background: #f2f2f2; */
   border-radius: 6px 6px 0px 0px;
   border-bottom: 3px solid #ffb3de;
+  cursor: pointer;
 
   /* border-bottom: none; */
   overflow: hidden;
@@ -373,7 +374,9 @@ function BlogCard({ post, author, visible }) {
   return (
     <Article style={{ display: visible }}>
       {" "}
-      <ImageFramer>
+      <ImageFramer
+        onClick={() => navigate(`/${post.data.url ? post.data.url : post.uid}`)}
+      >
         <Image image={getImage(post.data.thumbnail)} alt="thumbnail" />
       </ImageFramer>
       <RowSpaceBtw>
